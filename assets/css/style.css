@@ -73,6 +73,7 @@ img{
     font-weight: bold;
     border-radius: 30px;
     position: absolute;
+    text-align: center;
 }
 
 .modifier:hover{
@@ -97,4 +98,73 @@ img{
 #add{
     bottom: 80px;
     right: 60px;
+}
+
+/* MEDIA MOBILE */
+@media screen and (max-width: 400px) {
+
+    .counter-outer-container{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    .pc-img{
+        display: none;
+    }
+
+    #counter-display{
+        font-size: 100px;
+        padding-top: 20px;
+    }
+    
+
+    .modifier{
+        width: 60px;
+        height: 40px;
+        font-size: 11px;
+        border-radius: 30px;
+    }
+
+    #remove{
+        bottom: 30px;
+        left: 20px;
+    }
+    
+    #save{
+        border-radius: 30px;
+        width: 50px;
+        height: 30px;
+        bottom: 34px;
+        right: 40%;
+    }
+    
+    #add{
+        bottom: 30px;
+        right: 20px;
+    }
+
+    .images-container{
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        margin-left: 30px;
+        padding: 10px 0px;
+    }
+
+    .counter-inner-container{
+        width: 250px;
+        height: 225px;
+    }
+
+    .images-container > *{
+        width: 60px;
+        margin: auto;
+        padding-right: 50px;
+    }
+
 }
