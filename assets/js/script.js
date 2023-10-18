@@ -7,7 +7,11 @@ const maximumValue = 10;
 const minimumValue = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
-    displayRate.innerHTML = 0;
+    if (localStorage.getItem('displayRate') ) {
+        displayRate.innerHTML = localStorage.getItem('displayRate');
+      } else {
+        displayRate.innerHTML = 0;
+      }
 });
 
 decreaseBtn.addEventListener('click', decreaseValue);
