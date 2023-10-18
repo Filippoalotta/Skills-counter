@@ -6,6 +6,9 @@ const saveBtn = document.getElementById('save');
 const maximumValue = 10;
 const minimumValue = 0;
 
+document.addEventListener("DOMContentLoaded", function() {
+    displayRate.innerHTML = 0;
+});
 
 decreaseBtn.addEventListener('click', decreaseValue);
 function decreaseValue(){
@@ -30,8 +33,3 @@ function showData(){
     displayRate.innerHTML = localStorage.getItem('displayRate');
 }
 showData();
-
-    
-
-
-
