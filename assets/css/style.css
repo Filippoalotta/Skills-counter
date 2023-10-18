@@ -1,0 +1,100 @@
+body{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+}
+
+.pc-img{
+    width: 70px;
+    height: 45px;
+}
+
+.counter-outer-container{
+    display: flex;
+    border: 2px solid black;
+    width: 650px;
+    border-radius: 32px;
+    margin: auto;
+}
+
+.counter-inner-container{
+    width: 500px;
+    height: 450px;
+    background: linear-gradient(to right, rgb(7, 224, 50), rgb(35, 178, 107));
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+}
+
+.images-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    padding: 10px 0px;
+}
+
+.images-container > *{
+    width: 80px;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#counter-display{
+    display: inline-block;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    height: 50%;
+    color: #fff;
+    font-size: 110px;
+    font-weight: bold;
+    padding-top: 110px;
+}
+
+.modifier{
+    width: 25%;
+    height: 18%;
+    background-color: #fff;
+    color: rgb(6, 214, 165);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.modifier:hover{
+    background-color: rgb(6, 214, 165);
+    color: white;
+    border: 1px solid white;
+}
+
+#remove{
+    bottom: 80px;
+    left: 60px;
+}
+
+#save{
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 44%;
+}
+
+#add{
+    bottom: 80px;
+    right: 60px;
+}
