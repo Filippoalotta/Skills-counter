@@ -1,7 +1,38 @@
-const displayRate = document.getElementById('counter-display');
-const decreaseBtn = document.getElementById('remove');
-const increaseBtn = document.getElementById('add');
-const saveBtn = document.getElementById('save');
+const innerDiv = document.querySelector('.counter-inner-container');
+const displayRate = document.createElement('div');
+const decreaseBtn = document.createElement('button');
+const increaseBtn = document.createElement('button');
+const saveBtn = document.createElement('button');
+
+function getDisplayRate() {
+    displayRate.setAttribute('id', 'counter-display');
+    innerDiv.appendChild(displayRate);
+};
+getDisplayRate();
+
+function getDecreaseBtn() {
+    decreaseBtn.classList.add('modifier');
+    decreaseBtn.setAttribute('id', 'remove');
+    decreaseBtn.innerHTML = 'Decrease';
+    innerDiv.appendChild(decreaseBtn);
+};
+getDecreaseBtn();
+
+function getIncreaseBtn() {
+    increaseBtn.classList.add('modifier');
+    increaseBtn.setAttribute('id', 'add');
+    increaseBtn.innerHTML = 'Increase';
+    innerDiv.appendChild(increaseBtn);
+};
+getIncreaseBtn();
+
+function assignmentSave() {
+    saveBtn.classList.add('modifier');
+    saveBtn.setAttribute('id', 'save');
+    saveBtn.innerHTML = 'Save';
+    innerDiv.appendChild(saveBtn);
+};
+assignmentSave();
 
 const maximumValue = 10;
 const minimumValue = 0;
